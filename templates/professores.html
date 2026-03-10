@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Professores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/alunos">Alunos</a>
+    <a href="/professores">Professores</a>
+    <a href="/disciplinas">Disciplinas</a>
+</nav>
+
+<div class="container">
+    <h1>Lista de Professores</h1>
+
+    <ul>
+        {% for prof in professores %}
+            <li>{{ prof }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>

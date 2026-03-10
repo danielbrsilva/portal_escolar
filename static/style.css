@@ -1,0 +1,128 @@
+/* Importando uma fonte mais elegante e legível */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --primary-blue: #1a4e8a;
+    --accent-yellow: #1f9bac;
+    --bg-gray: #f4f7f9;
+    --text-dark: #000000;
+    --border-color: #dcdde1;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-gray);
+    margin: 0;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navegação Superior */
+nav {
+    background-color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    padding: 18px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: var(--accent-yellow);
+}
+
+/* Container de Folha de Papel */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 4px; /* Cantos menos arredondados para parecer papel */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+/* Cabeçalho */
+.school-header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px double var(--border-color);
+    padding-bottom: 20px;
+}
+
+.school-header h1 {
+    margin: 0;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Dashboard em Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(26, 78, 138, 0.1);
+}
+
+.card h3 {
+    color: var(--primary-blue);
+    margin-top: 0;
+}
+
+/* Mural de Avisos (Estilo Quadro Negro) */
+.notice-board {
+    background: #464749; /* Cor de quadro negro */
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 8px solid #636e72; /* Moldura do quadro */
+}
+
+.notice-board h2 {
+    color: var(--accent-yellow);
+    margin-top: 0;
+}
+
+.notice-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+    padding: 15px 0;
+}
+
+.date {
+    background: var(--accent-yellow);
+    color: black;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 0.8rem;
+}

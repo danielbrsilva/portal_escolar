@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Escolar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/alunos">Alunos</a>
+    <a href="/professores">Professores</a>
+    <a href="/disciplinas">Disciplinas</a>
+</nav>
+
+<div class="container">
+    <header class="school-header">
+
+        <h1>Portal Escolar</h1>
+        <h1>Escola Eu Sabo Mueitu</h1>
+    </header>
+
+    <div class="dashboard-grid">
+        <a href="/alunos" class="card">
+            <h3>Alunos</h3>
+            <p>Gestão de turmas e matrículas.</p>
+        </a>
+        <a href="/professores" class="card">
+            <h3>Professores</h3>
+            <p>Corpo docente e horários.</p>
+        </a>
+        <a href="/disciplinas" class="card">
+            <h3>Disciplinas</h3>
+            <p>Grade curricular e materiais.</p>
+        </a>
+    </div>
+
+    <hr>
+
+    <section class="notice-board">
+        <h2>Mural de Avisos</h2>
+        <div class="notice-item">
+            <span class="date">10 de Abril</span>
+            <p><strong>Reunião de Pais:</strong> Sexta-feira às 19h no auditório.</p>
+        </div>
+        <div class="notice-item">
+            <span class="date">13 de Abril</span>
+            <p><strong>Início das Provas:</strong> Fiquem atentos ao cronograma no mural.</p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
